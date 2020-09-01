@@ -2,53 +2,45 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const cardArray = [
         {
-            name: 'Cat1',
-            img: '/assets/images/Cat1.jpg'
+            name: '100',
+            img: './assets/images/100.JPG'
         },
         {
-            name: 'Cat1',
-            img: '/assets/images/Cat1.jpg'
+            name: '100',
+            img: './assets/images/100B.JPG'
         },
         {
-            name: 'Cat2',
-            img: '/assets/images/Cat2.jpg'
+            name: '200',
+            img: './assets/images/200.JPG'
         },
         {
-            name: 'Cat2',
-            img: '/assets/images/Cat2.jpg'
+            name: '200',
+            img: './assets/images/200B.JPG'
         },
         {
-            name: 'Cat3',
-            img: '/assets/images/Cat3.jpg'
+            name: '300',
+            img: './assets/images/300.JPG'
         },
         {
-            name: 'Cat3',
-            img: '/assets/images/Cat3.jpg'
+            name: '300',
+            img: './assets/images/300B.JPG'
         },
         {
-            name: 'Cat4',
-            img: '/assets/images/Cat4.jpg'
+            name: '400',
+            img: './assets/images/400.JPG'
         },
         {
-            name: 'Cat4',
-            img: '/assets/images/Cat4.jpg'
+            name: '400',
+            img: './assets/images/400B.JPG'
         },
         {
-            name: 'Cat5',
-            img: '/assets/images/Cat5.jpg'
+            name: '500',
+            img: './assets/images/500.JPG'
         },
         {
-            name: 'Cat5',
-            img: '/assets/images/Cat5.jpg'
+            name: '500',
+            img: './assets/images/500B.JPG'
         },
-        {
-            name: 'Cat6',
-            img: '/assets/images/Cat6.jpg'
-        },
-        {
-            name: 'Cat6',
-            img: '/assets/images/Cat6.jpg'
-        }
     ]
     // Randomise the cards at beginning of game.
     cardArray.sort(()=> 0.5 - Math.random());
@@ -64,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard(){
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img');
-            card.setAttribute('src', '/assets/images/card-back.jpg');
+            card.setAttribute('src', './assets/images/card-back.jpg');
             card.setAttribute('data-id', i);
             card.setAttribute('class', 'animate__animated animate__flip');
             card.addEventListener('click', flipCard);
@@ -85,25 +77,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 width: '25rem',
                 background: '#c9f4de',
                 title: 'They match!',
-                imageUrl: '/assets/images/cat-heart.jpg',
+                imageUrl: './assets/images/cat-heart.jpg',
                 imageAlt: 'Happy cat',
                 showConfirmButton: false,
                 timer: 2200,
                 allowOutsideClick: true
             })
-            cards[optionOneId].setAttribute('src', '/assets/images/cat-family.jpg');
-            cards[optionTwoId].setAttribute('src', '/assets/images/cat-family.jpg');
+            cards[optionOneId].setAttribute('src', './assets/images/cat-family.jpg');
+            cards[optionTwoId].setAttribute('src', './assets/images/cat-family.jpg');
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', '/assets/images/card-back.jpg');
-            cards[optionTwoId].setAttribute('src', '/assets/images/card-back.jpg');
+            cards[optionOneId].setAttribute('src', './assets/images/card-back.jpg');
+            cards[optionTwoId].setAttribute('src', './assets/images/card-back.jpg');
             Swal.fire({
                 position: 'center',
                 padding: '1rem',
                 width: '25rem',
                 background: '#fdaaaa',
                 title: 'Try again',
-                imageUrl: '/assets/images/cat-no.jpg',
+                imageUrl: './assets/images/cat-no.jpg',
                 imageAlt: 'Sad cat',
                 showConfirmButton: false,
                 timer: 2200,
@@ -115,14 +107,14 @@ document.addEventListener('DOMContentLoaded', () => {
         resultDisplay.textContent = cardsWon.length;
         if (cardsWon.length === cardArray.length / 2) {
             Swal.fire({
-                title: 'You found all the kittens. Well done!',
+                title: 'You found all the matches. Well done!',
                 width: 600,
                 padding: '3em',
-                background: 'url(/assets/images/cat-unicorn.jpg)',
+                background: 'url(./assets/images/cat-unicorn.jpg)',
                 confirmButtonColor: '#ffd1dc',
                 backdrop: `
                 rgba(0,0,123,0.4)
-                url("/assets/images/tenor.gif")
+                url("./assets/images/tenor.gif")
                 `
             })
         }

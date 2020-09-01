@@ -62,7 +62,8 @@ html {
 /* * Project Specific CSS */
 
 body {
-    background-image: url(/assets/images/cat-background.jpg);
+    background: black;
+    color: white;
     background-size: contain;
     font-family: 'Indie Flower', cursive;
 }
@@ -136,10 +137,10 @@ img {
     margin: 0;
 }
 .btn {
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     text-decoration: none;
-    background: #ed3330;
+    background: pink;
     padding: 20px;
     border-radius: 5px;
     display: inline-block;
@@ -159,5 +160,5 @@ img {
 .rules-list {
   border: #777 2px solid;
   border-radius: 2px;
-  background-color: #fff;
+  background-color:black;
 }        
