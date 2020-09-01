@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to match-two-game 👋</h1>
+<h1 align="center">Welcome to HTTP Status Code Levels Memory Game 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
   <a href="FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE" target="_blank">
@@ -9,28 +9,17 @@
   </a>
 </p>
 
-> A simple JavaScript game designed to demonstrate an understanding of DOM manipulation and use of an animation library. Created and deployed to celebrate my niece's 6th birthday!
+> A simple JavaScript game designed to demonstrate an understanding of DOM manipulation and use of an animation library. Based heavily off of the work of Ian Whiscombe's matching game here: 
 
 ### 🏠 [Homepage](https://github.com/ianwhiscombe/match-two-game)
 
 ### ✨ [Demo](https://match-two-game.netlify.app)
 
-## Author
+## Authors
 
-👤 **Ian Whiscombe**
+👤 **Ashley Mikkola & Ian Whiscombe**
 
-* Website: www.ianwhiscombe.com
-* Twitter: [@i4nw](https://twitter.com/i4nw)
-* Github: [@ianwhiscombe](https://github.com/ianwhiscombe)
-* LinkedIn: [@ian-whiscombe](https://linkedin.com/in/ian-whiscombe)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-## 📝 License
-
-Copyright © 2020 [Ian Whiscombe](https://github.com/ianwhiscombe).<br />
-This project is [MIT License]
-
-***
